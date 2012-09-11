@@ -1,0 +1,9 @@
+*.pyc
+.static/
+.svn
+local_settings.py
+development.db
+deploy/settings.py
+node_modules
+game-min.js
+CACHE

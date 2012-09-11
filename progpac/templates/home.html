@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block page %}
+<div id="home" class="container content">
+
+  <div class="hero-unit">
+    <h1>
+      <img src="{{ STATIC_URL }}assets/guy_front.png">
+      Welcome to ProgPac
+    </h1>
+    <p>Enter <b>your name</b> below and hit "Start Game"</p>
+
+    <form method="post" >{% csrf_token %}
+      <input name="username" type="text" autofocus="autofocus" value="{{ request.session.username|default:"" }}"/>
+      
+      <input name="submit" type="submit" value="Tutorial" class="btn btn btn-success btn-large" />
+      <input name="submit" type="submit" value="Start Game" class="btn btn btn-primary btn-large" />
+      
+    </form>
+  </div>
+
+</div>
+{% endblock %}

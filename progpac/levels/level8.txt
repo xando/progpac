@@ -1,0 +1,28 @@
+*o**o*BEEEEEEEEEEEEEEEEEH
+oo*oo*..................F
+*oo*oo*.................C
+D*oo*oo*...........*o**o*
+F.*oo*oo*.........*oooooo
+F..*oo*oo*.......*oo*oo**
+F...*oo*oo*.....*oo*oo*.D
+F....*oo*oo*...*oo*oo*..F
+F.....*oo*oo*.*oo*oo*...F
+F......*oo*oo*oo*oo*....F
+F......*ooooooo*oo*.....F
+F.....*oo*ooooooo*......F
+F....*oo*oooo*oo*.......F
+F...*oo*oooo*oo*........F
+F..*oo*ooooooo*.........F
+F.*oo*oo*oo*oo*.........F
+C*oo*oo***oo*oo*........F
+*oo*oo*...*oo*oo*.......F
+oo*oo*.....*oo*oo*......F
+o*oo*.......*oo*oo*.....F
+ooo*.........*oo*oo*....F
+*o*...........*oo*oo*...F
+D..............*oo*oo*..F
+F...............*ou*oo*.F
+IEEEEEEEEEEEEEEEA***o*BEG
+
+points 1100
+maxsize 27

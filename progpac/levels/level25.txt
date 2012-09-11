@@ -1,0 +1,28 @@
+o*o*o*o*o*oooooo......ooo
+oDoDoDoDo*.*o*.*.BEEEEEA*
+oFoFoFoCo..o.o..o.....ooo
+.F.F.C.*.*o*.*o*.*.BEEEA*
+.F.F..o..o.....o..o...ooo
+.F.C.*.*o*.*.*.*o*.*.BEA*
+.F..o..o....o....o..o.ooo
+.C.*.*o*.*.*o*.*.*o*.*BA*
+..o..o....o.o.o....o..ooo
+o*.*o*.*.*o*o*o*.*.*o*.**
+o..o....ooo.o.ooo....o..o
+o*o*.*.*.*o*o*o*.*.*.*o*o
+oo....ooooo.u.ooooo....oo
+o*o*.*.*.*o*o*o*.*.*.*o*o
+o..o....ooo.o.ooo....o..o
+**.*o*.*.*o*o*o*.*.*o*.*o
+ooo..o....o.o.o....o..o..
+*BA*.*o*.*.*o*.*.*o*.*.D.
+ooo.o..o....o....o..o..F.
+*BEA.*.*o*.*.*.*o*.*.D.F.
+ooo...o..o.....o..o..F.F.
+*BEEEA.*.*o*.*o*.*.D.F.F.
+ooo.....o..o.o..oDoFoFoFo
+*BEEEEEA.*.*o*.*oCoCoCoCo
+ooo......oooooo*o*o*o*o*o
+
+points 3000
+maxsize 36

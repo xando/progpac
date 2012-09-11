@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% load tags %}
+
+{% block page %}
+<div class="container">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+    	<a class="brand" href="/">ProgPac</a>
+
+    	<ul class="nav">
+
+    	  <li class="{% active "level" %} dropdown">
+
+    	    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    	      {{ level.name|default:"Game" }}
+    	      <b class="caret"></b>
+    	    </a>
+    	    <ul class="dropdown-menu">
+	      <li class="dropdown-submenu">
+		<a tabindex="-1" href="#">Tutorial</a>
+		<ul class="dropdown-menu">
+		  {% for level in tutorial_levels %}
+		  <li>
+                    <a href="{{ level.get_absolute_url }}">
+                      {{ level.name|capfirst }}
+		      {% if level in request.session.levels_done %}
+		      <i class="icon-star-empty"></i>
+		      {% endif %}
+                    </a>
+		  </li>
+		  {% endfor %}
+		</ul>
+	      </li>
+    	      {% for level in game_levels %}
+              <li>
+                <a href="{{ level.get_absolute_url }}">
+                  {{ level.name|capfirst }}
+		  {% if level in request.session.levels_done %}
+		  <i class="icon-star-empty"></i>
+		  {% endif %}
+                </a>
+              </li>
+              {% endfor %}
+    	    </ul>
+    	  </li>
+
+    	  <li class="{% active "help" %}">
+    	    <a href="{% url help %}">Help</a>
+    	  </li>
+
+    	  <li class="{% active "results" %}">
+    	    <a href="{% url results %}">Results</a>
+    	  </li>
+
+	  <li class="{% active "credits" %}">
+    	    <a href="{% url credits %}">Credits</a>
+    	  </li>
+
+    	</ul>
+	<a class="brand" href="/" style="float:right;">
+	    {{ request.session.username|default:"" }}
+	  </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% block content %}{% endblock %}
+
+{% endblock %}

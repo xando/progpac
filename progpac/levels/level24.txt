@@ -1,0 +1,28 @@
+ooooooooooo*ooo*ooo*ooo*o
+**o*o*o*o*o*o*o*o*o*o*o*o
+ooooooooooo*o*ooo*o*o*ooo
+o*****o*o.o*o*****o*o*o*o
+ooooooo*o.o*o.....o*o*ooo
+******o*o.o*o.....o*o*o*o
+ooooooooo.o*o.....ooooooo
+o***......o*o.....o***o*o
+ooo*......o*o.....ooooooo
+**o*......o*o.........o*o
+ooo*......ooo.ooooooooooo
+o***.......***o**********
+ooooooooooo***ooooooooooo
+**********o***.......***o
+ooooooooooo.ooo......*ooo
+o**.........o*o......*o**
+ooooooo.....o*o......*ooo
+o*o***o.....o*o......***o
+ooooooo.....o*o.ooooooooo
+o*o*o*o.....o*o.o*o******
+ooo*o*o.....o*o.o*ooooooo
+o*o*o*o*****o*o.o*o*****o
+ooo*o*o*ooo*o*ooooooooooo
+o*o*o*o*o*o*o*o*o*o*o*o**
+o*ooo*ooo*oou*ooooooooooo
+
+points 2300
+maxsize 35

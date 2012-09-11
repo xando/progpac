@@ -1,0 +1,325 @@
+[
+  {
+    "pk": 1, 
+    "model": "core.tier", 
+    "fields": {
+      "name": "Tutorial"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "core.tier", 
+    "fields": {
+      "name": "Tier1"
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "tutorial1", 
+      "name": "Tutorial 1", 
+      "content": "-.....-\r\n.......\r\n...u...\r\n.......\r\n...o...\r\n.......\r\n-.....-", 
+      "maxsize": 100, 
+      "points": 0, 
+      "speech": "<h4>Hi,</h4>\r\n\r\n<p>\r\n  Welcome in my world, your goal here is to collect all <i class=\"icon-star\"></i> from the map.\r\n  Sounds simple? Let's try with this one.\r\n</p>\r\n\r\n<p>\r\n  In this map <i class=\"icon-star\"></i> in next to you, not to fare away. Try to put <b>s</b> \r\n  on the left in editor and then click big <nobr><b style=\"color:#51A351\">Green Button</b><nobr/> bellow it.\r\n</p>\r\n  \r\n<p>You will know what to do next, good luck.</p>\r\n\r\n<div style=\"text-align:right\">\r\n<button class=\"btn btn-mini btn-primary\" type=\"button\" data-dismiss=\"modal\" aria-hidden=\"true\" >ok</button>\r\n</div>", 
+      "tier": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "tutorial2", 
+      "name": "Tutorial 2", 
+      "content": "-.....-\r\n.......\r\n...u...\r\n.......\r\n....o..\r\n.......\r\n-.....-", 
+      "maxsize": 100, 
+      "points": 0, 
+      "speech": "<h4>Hello again, you've made it!</h4>\r\n\r\n<p>\r\n  You know how to go forward, but this star is not in the straight line with you\r\n</p>\r\n\r\n<p>\r\n  Make some steps using <b>s</b> character and then put <b>l</b> (l stands for <b>l</b>eft) to make a turn to collect this <i class=\"icon-star\"></i>.\r\n</p>\r\n\r\n<div style=\"text-align:right\">\r\n<button class=\"btn btn-mini btn-primary\" type=\"button\" data-dismiss=\"modal\" aria-hidden=\"true\" >ok</button>\r\n</div>", 
+      "tier": 1
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "tutorial3", 
+      "name": "Tutorial 3", 
+      "content": "-.......-\r\n....u....\r\n.........\r\n.........\r\n.........\r\n.........\r\n.........\r\n.........\r\n.........\r\n-...o...-", 
+      "maxsize": 7, 
+      "points": 0, 
+      "speech": "<h4>Good, good</h4>\r\n\r\n<p>\r\n  But now you have to focus. The <i class=\"icon-star\"></i> is to far a way for a normal walk and you need to watch out for a counter here, right now is <b style=\"color:#51A351\">Green</b>. \r\n  You have limit here when you reach it counter will become <b style=\"color:#C67605\">Orange</b> and you will not go anywhere.\r\n</p>\r\n\r\n<p>\r\n  Let's try to create a big step, a function. That will combine small steps into one. \r\n  Let's create a new step <b>f</b> and put in it few normal steps <b>sss</b>. You use new steps as old ones.\r\n  <code>\r\n    <pre>\r\nf:sss\r\nf\t</pre>\r\n  </code>\r\n<p>\r\n  \r\n\r\n<div style=\"text-align:right\">\r\n<button class=\"btn btn-mini btn-primary\" type=\"button\" data-dismiss=\"modal\" aria-hidden=\"true\" >ok</button>\r\n</div>", 
+      "tier": 1
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "tutorial4", 
+      "name": "Tutorial 4", 
+      "content": "-.....-\r\n.......\r\n..o.u..\r\n...*...\r\n..o.o..\r\n.......\r\n-.....-", 
+      "maxsize": 6, 
+      "points": 0, 
+      "speech": "<h4>Nice one!</h4>\r\n\r\n<p>\r\n  Oh I forgot to mention that new created step can call it self, just for fun. Try this code first. \r\n    <code>\r\n    <pre>\r\nf:sssf\r\nf\t</pre>\r\n  </code>\r\n</p>\r\n\r\n<p>\r\n  Remember that <b style=\"color:#C67605\">The Counter</b> is working and will for since now on\r\n</p>\r\n\r\n\r\n<div style=\"text-align:right\">\r\n<button class=\"btn btn-mini btn-primary\" type=\"button\" data-dismiss=\"modal\" aria-hidden=\"true\" >ok</button>\r\n</div>", 
+      "tier": 1
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "level1", 
+      "name": "Level 1", 
+      "content": "o.*.....-\r\n.........\r\n*.o.*....\r\n.........\r\n..*.o.*..\r\n.........\r\n....*.o.*\r\n.........\r\n-.....*.u", 
+      "maxsize": 12, 
+      "points": 0, 
+      "speech": "", 
+      "tier": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "level2", 
+      "name": "Level 2", 
+      "content": "-.....-\r\n.o.*.o.\r\n.......\r\n.*.u.*.\r\n.......\r\n.o.*.o.\r\n-.....-\r\n", 
+      "maxsize": 22, 
+      "points": 0, 
+      "speech": "", 
+      "tier": 2
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "4e9b205d54", 
+      "name": "Level 3", 
+      "content": "..*.oo.*..\r\n....**....\r\n..*.oo.*..\r\n.*.o**o.*.\r\n..*.oo.*..\r\n....**....\r\n..*.oo.*..\r\n.*.o**o.*.\r\n..*.oo.*..\r\n....**....\r\n......u...\r\n", 
+      "maxsize": 15, 
+      "points": 0, 
+      "speech": "", 
+      "tier": 2
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "db28a2cbda", 
+      "name": "Level 4", 
+      "content": ".....Fo*.....\r\n....*F.*.....\r\n...*oF.*.....\r\n...*oF.******\r\n...*oF.oo...o\r\n...*.Co*.BEEE\r\n...*..o*.*...\r\n...*.***.*...\r\n...*.*o.u*...\r\nEEEA.*oD.*...\r\no...oo.Fo*...\r\n******.Fo*...\r\n.....*.Fo*...\r\n.....*.F*....\r\n.....*oF.....\r\n\r\n", 
+      "maxsize": 0, 
+      "points": 0, 
+      "speech": "", 
+      "tier": 2
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "core.level", 
+    "fields": {
+      "hash": "495374f1d4", 
+      "name": "Level 5", 
+      "content": ".....................\r\n.***..***...**...**..\r\n.*..*.*..*.*..*.*....\r\n.***..***..*..*.*.**.\r\n.*....*..*.*..*.*..*.\r\n.*....*..*..**...**..\r\n..........u..........\r\n.....................\r\n...***...**...**.....\r\n...*..*.*..*.*..*....\r\n...***..****.*.......\r\n...*....*..*.*..*....\r\n...*....*..*..**.....\r\n.....................", 
+      "maxsize": 0, 
+      "points": 0, 
+      "speech": "Congratulations", 
+      "tier": 2
+    }
+  }, 
+  {
+    "pk": 1, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-04T17:38:33.388", 
+      "level": 5, 
+      "program": "rrslsrslsrslsrslsrslsrslsrslsrsls@", 
+      "program_length": 9, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-04T17:39:21.189", 
+      "level": 5, 
+      "program": "rsrslsrslsrslsrslsrslsrslsrslsrs@", 
+      "program_length": 9, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "core.result", 
+    "fields": {
+      "username": "paolo", 
+      "commited": "2012-09-05T15:09:11.273", 
+      "level": 5, 
+      "program": "rsrsslssrsslssrsslssrssls@", 
+      "program_length": 12, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T18:47:07.894", 
+      "level": 5, 
+      "program": "rsrslsrslsrslsrslsrslsrslsrslsrs@", 
+      "program_length": 9, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T19:29:18.509", 
+      "level": 1, 
+      "program": "ss@", 
+      "program_length": 2, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T19:42:17.377", 
+      "level": 3, 
+      "program": "ssssss@", 
+      "program_length": 6, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T19:42:22.007", 
+      "level": 3, 
+      "program": "ssssss@", 
+      "program_length": 6, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T20:05:56.678", 
+      "level": 3, 
+      "program": "ssssssss@", 
+      "program_length": 8, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T20:06:16.509", 
+      "level": 3, 
+      "program": "ssssssss@", 
+      "program_length": 8, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T20:06:50.726", 
+      "level": 3, 
+      "program": "ssssssss@", 
+      "program_length": 8, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-05T20:11:13.912", 
+      "level": 4, 
+      "program": "ssrssrss@", 
+      "program_length": 7, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "core.result", 
+    "fields": {
+      "username": "Lena", 
+      "commited": "2012-09-05T21:48:18.646", 
+      "level": 5, 
+      "program": "rsrslsrslsrslsrslsrslsrslsrslsrs@", 
+      "program_length": 10, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "core.result", 
+    "fields": {
+      "username": "Lena", 
+      "commited": "2012-09-05T21:49:06.576", 
+      "level": 5, 
+      "program": "rsrslsrslsrslsrslsrslsrslsrslsrs@", 
+      "program_length": 10, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "core.result", 
+    "fields": {
+      "username": "Lena", 
+      "commited": "2012-09-05T21:51:07.830", 
+      "level": 5, 
+      "program": "rsrslsrslsrslsrslsrslsrslsrslsrs@", 
+      "program_length": 11, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-06T10:40:20.347", 
+      "level": 1, 
+      "program": "ss@", 
+      "program_length": 2, 
+      "email": ""
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "core.result", 
+    "fields": {
+      "username": "xando", 
+      "commited": "2012-09-06T10:40:55.585", 
+      "level": 2, 
+      "program": "ssls@", 
+      "program_length": 4, 
+      "email": ""
+    }
+  }
+]

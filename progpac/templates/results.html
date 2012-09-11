@@ -1,0 +1,74 @@
+{% extends "base_bar.html" %}
+
+{% block content %}
+<div id="results" class="container content">
+
+  <ul class="nav nav-tabs" id="myTab">
+    <li class="active"><a href="#home">Your Results</a></li>
+    <li><a href="#profile">Hall of Fame</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div class="tab-pane active" id="home">
+      
+      <table class="table table-striped">
+	<thead>
+	  <tr>
+	    <th>Level</th>
+	    <th>Length</th>
+	    <th>When</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {% for level in user_results %}
+	  <tr>
+	    <td>{{ level.name }}</td>
+	    <td>{{ level.program_length|default:"<i>unsolved</i>" }}</td>
+	    <td>{{ level.when|default:"<i>never</i>" }}</td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+      </table>
+
+    </div>
+    
+    <div class="tab-pane" id="profile">
+
+      <table class="table table-striped">
+	<thead>
+	  <tr>
+	    <th>Level</th>
+	    <th>Length</th>
+	    <th>Who</th>
+	    <th>When</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {% for level in levels %}
+	  <tr>
+	    <td>{{ level.name }}</td>
+	    <td>{{ level.best_result.program_length|default:"<i>unsolved</i>" }}</td>
+	    <td>
+              {% if level.best_result %}
+              {{ level.best_result.username|default:"somebody" }}
+              {% else %}
+              <i>no one</i>
+              {% endif %}
+	    </td>
+	    <td>
+              {% if level.best_result %}
+              {{ level.best_result.commited }}
+              {% else %}
+              <i>never</i>
+              {% endif %}
+	    </td>
+	  </tr>
+	  {% endfor %}
+	</tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>
+{% endblock %}

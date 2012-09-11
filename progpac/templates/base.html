@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load compress %}
+  {% load tags %}
+  <head>
+    <meta charset="utf-8">
+    <title>Progpac!</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% compress css %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/less" href="{{ STATIC_URL }}main.less">
+    {% endcompress %}
+
+    {% compress js %}
+    <script type="text/javascript" src="{{ STATIC_URL }}jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}jquery.form.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}less.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}main.js"></script>
+    {% endcompress %}
+
+    {% if debug %}
+    <script type="text/javascript" src="{{ STATIC_URL }}limejs/closure/closure/goog/base.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}game/game.js"></script>
+    {% else %}
+    <script type="text/javascript" src="{{ STATIC_URL }}game/game-min.js" charset="utf-8"></script>
+    {% endif %}
+
+    <script type="text/javascript">
+      var LEVEL = {{ level_json|safe|default:"null" }};
+      var CODE = "{{ code|default:"" }}";
+
+      var STATIC_URL = "{{ STATIC_URL }}";
+    </script>
+    {% include 'google_analytics.html' %}
+  </head>
+
+  <body>
+
+    {% block page %}{% endblock %}
+
+    
+  </body>
+</html>

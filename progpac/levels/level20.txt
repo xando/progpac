@@ -1,0 +1,28 @@
+D.D.D.D.o.......o.D.D.D.D
+F.F.F.IEEEEA.BEEEEG.F.F.F
+F.F.F...............F.F.F
+F.F.C.BEEEEA.BEEEEA.C.F.F
+F.F...................F.F
+F.F.JEEEEEEA.BEEEEEEH.F.F
+F.F.Fo.............oF.F.F
+F.C.IEEEEEEEEEA.BEEEG*C.F
+F.......................F
+NA.BEEEEEEEEEEEEEEEEEA.BM
+F.......................F
+IEEA.BEEEEELELEEEEEA.BEEG
+....*......FuF...........
+.D.D.D.D.D.C.C.D.D.D.D.D.
+.F.F.F.F.F.....F.F.F.F.F.
+.F.F.F.F.F.D.D.F.F.F.F.F.
+.F.F.F.F.F.F.F.F.F.F.F.F.
+.F.F.IEM.F.F.F.F.NEG.F.F.
+.F.F...F.C.F.F.C.F...F.F.
+.C.NEH.C...F.F...C.JEM.C.
+...F.F...D.F.F.D...F.F...
+BA.F.C.D.F.C.F.F.D.C.F.BA
+...F...F.F...F.F.F...F...
+BEEKEA.C.C.D.IEG.C.BEKEEA
+...........Co............
+
+points 1700
+maxsize 21

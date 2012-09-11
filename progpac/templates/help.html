@@ -1,0 +1,93 @@
+{% extends "base_bar.html" %}
+{% load static %}
+
+{% block content %}
+<div id="help" class="container content">
+
+  <div class="well">
+    <h3>Basic Steps
+      <small>There is only tree <i>atomic</i> moves:</small>
+    </h3>
+
+    <h4>s (step forward)</h4>
+    <p>
+      <div class="sprite-step"></div>
+      Slides the bug one field forward
+    </p>
+
+    <h4>r (turn right)</h4>
+    <p>
+      <div class="sprite-right"></div>
+      Turns the bug right
+    </p>
+
+    <h4>l (turn left)</h4>
+    <p>
+      <div class="sprite-left"></div>
+      turns the bug left
+    </p>
+
+    <h4>example</h4>
+    <p>
+      So   knowing  this,  it is   not  too   hard   to  discover   that code
+      <pre><code>ssrsls</code></pre>
+      <div class="sprite-example"></div>
+    </p>
+  </div>
+
+  <div class="well">
+    <h3>Functions <small>Call the same sequence of steps more than once</small></h3>
+
+    <p>
+      Creating  code  only  from  atomic   moves  could  be quite  hard  to
+      understand and not  very useful if you want to  beat the code counter.
+      Most  case maps  contained in  games  are some  sort of  symmetric
+      structures  which means  that  your  code in  most  cases could  be
+      re-used.  Instead  of using  Ctrl-C  and  Ctrl-V  operations  we  will use
+      functions.
+    </p>
+
+    <pre>f:sssr
+lf</pre>
+
+    <p>
+      Analyzing this code from second  line. First element is a well known
+      atomic  step <code>l  (turn  left)</code> which  means that the  first
+      action   taken  by   the bug   will  be   turning   left.  Next   step
+      is <code>f</code>  which is not  a valid  step, but in  first line
+      holds a  definition of  this not atomic  step (function).  So typing <code>f</code>
+      runs the steps specified in the f function, <code>sssr</code>.
+    </p>
+
+    <p>
+      Functions  have to  be named  with the use  of single  lowercase letters,
+      but not one of the reserved step letters: s, r and l.
+    </p>
+
+    <p>
+      You are able to call defined  functions as many times and define as
+      many functions as you need  (well not quite because Latin alphabet
+      has 24 characters and 3 of them  are used for atomic moves, but it
+      is still a lot!).
+    </p>
+
+    <pre>f:sssr
+x:lsss
+rxff</pre>
+
+    <p>
+      This example will result in
+    </p>
+
+    <pre>
+rlssssssrsssr</pre>
+  </div>
+
+  <div class="well">
+    <h3>Recursion <small>Call the same sequence of steps more than once.</small></h3>
+
+  </div>
+
+</div>
+{% endblock %}
+
