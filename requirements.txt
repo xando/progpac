@@ -15,6 +15,7 @@ ipython==0.13
 psycopg2==2.4.5
 pycrypto==2.6
 python-dateutil==2.1
+raven==2.0.6
 six==1.1.0
 ssh==1.7.14
 wsgiref==0.1.2
