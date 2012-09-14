@@ -270,6 +270,7 @@ game.render_dynamic = function(code) {
 
     if (this.animation) {
 	game.animation.dispose();
+	game.animation.stop();
     }
 
     if (code) {
