@@ -268,6 +268,10 @@ game.render_dynamic = function(code) {
 
     this.guy = guy;
 
+    if (this.animation) {
+	game.animation.dispose();
+    }
+
     if (code) {
     	this.animate(code);
     }
@@ -317,10 +321,6 @@ game.generate_animation = function(code) {
 
 game.animate = function(code) {
     this.animation_steps = this.generate_animation(code);
-
-    if (this.animation) {
-	this.animation.stop();
-    }
 
     $('button.move').attr('disabled', 'disabled');
     this.animation = new lime.animation.Sequence(this.animation_steps);
