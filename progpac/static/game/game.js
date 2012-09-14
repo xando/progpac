@@ -273,6 +273,7 @@ game.render_dynamic = function(code) {
     }
 };
 
+
 game.get_real_direction = function(direction) {
     var e = direction%4;
     return (e < 0 ? e + 4 : e)
@@ -317,14 +318,18 @@ game.generate_animation = function(code) {
 game.animate = function(code) {
     this.animation_steps = this.generate_animation(code);
 
-    var animation = new lime.animation.Sequence(this.animation_steps);
+    if (this.animation) {
+	this.animation.stop();
+    }
+
     $('button.move').attr('disabled', 'disabled');
-    animation.addTarget(this.guy);
-    animation.enableOptimizations();
-    animation.play();
+    this.animation = new lime.animation.Sequence(this.animation_steps);
+    this.animation.addTarget(this.guy);
+    this.animation.enableOptimizations();
+    this.animation.play();
 
     var self = this;
-    goog.events.listen(animation, lime.animation.Event.STOP, function(e){
+    goog.events.listen(this.animation, lime.animation.Event.STOP, function(e){
 	self.setup_guy_box();
 	self.post_animate();
 	$('button.move').removeAttr("disabled");
