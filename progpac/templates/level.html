@@ -13,12 +13,8 @@
     </h4>
     <p>
       Your score is <span class="result"></span>.
-      We are going to put your name one the results page. Now, you can to the next level 
+      We are going to put your name one the results page. Now, you can to the next level
       or stay here and try to beat your score.
-    </p>
-    <p class="pull-right">
-      <a href="https://twitter.com/intent/tweet?screen_name=progpac&text=Hi%20just%20solved%20" class="twitter-mention-button" data-size="large">Tweet to @progpac</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </p>
   </div>
   <div class="modal-footer">
@@ -30,16 +26,16 @@
 
 
 <div id="level" class="container content">
-  
+
   <div id="guy-speech">{{ level.speech|safe }}</div>
 
   <div class="row">
     <div class="span8">
       <div id="map" style="border: 2px solid; padding-left: 4px"></div>
     </div>
-    
+
     <div class="span4 editor">
-      
+
       <div class="alert hide alert-error">
 	<h4>Oh snap!</h4>
 	<ul class="unstyled message"></ul>
@@ -48,7 +44,7 @@
       <form class="well" method="post">
 	{% csrf_token %}
 	{{ form.text }}
-	
+
 	<div class="btn-group">
 	  <button class="btn btn-large btn-inverse reset" title="Reset">
 	    <i class="icon-repeat icon-white"></i>
@@ -58,7 +54,7 @@
 	    <span class="code-maxsize">{{ level.maxsize }}</span>
 	  </button>
 	</div>
-	
+
       </form>
     </div>
   </div>
