@@ -1,5 +1,4 @@
 import os
-import subprocess
 import dj_database_url
 
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
