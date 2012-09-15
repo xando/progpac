@@ -114,5 +114,5 @@ class ResultsLevel(TemplateView):
             "results": results
         }
 
-class Credits(TemplateView):
-    template_name = "credits.html"
+class About(TemplateView):
+    template_name = "about.html"

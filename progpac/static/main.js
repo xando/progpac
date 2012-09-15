@@ -91,4 +91,9 @@ $(function() {
 	    $(this).tab('show');
 	});
     }
+
+    // About View
+    if( $("#about").length ) {
+	$('.guy').tooltip('show');
+    }
 })

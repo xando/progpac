@@ -13,7 +13,7 @@ urlpatterns = patterns('',
     url(r'^results/$', views.Results.as_view(), name='results'),
     url(r'^results/(?P<level_pk>\w+)/$', views.ResultsLevel.as_view(), name='results_level'),
     url(r'^level/(?P<level_hash>\w+)/$', views.Level.as_view(), name='level'),
-    url(r'^credits/$', views.Credits.as_view(), name='credits'),
+    url(r'^about/$', views.About.as_view(), name='about'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
