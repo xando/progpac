@@ -71,7 +71,7 @@ class Level(FormView):
 
             models.Result.objects.create(
                 level=self.level,
-                program=code,
+                program=form.cleaned_data['text'],
                 program_length=parser.program_length,
                 username=self.request.session['username'],
                 session=self.request.session.session_key
