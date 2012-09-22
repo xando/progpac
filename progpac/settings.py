@@ -133,4 +133,4 @@ COMPRESS_OFFLINE_MANIFEST = os.environ.get("GIT_REV")
 AWS_QUERYSTRING_AUTH = False
 AWS_S3_SECURE_URLS = False
 
-SENTRY_DSN = 'https://c7eee3f15b8e4d6abc93faf7bdf6659e:546efe1ef41e40aaa15f2ae80b1a037d@app.getsentry.com/2387'
+SENTRY_DSN = os.environ.get('SENTRY_DSN')
